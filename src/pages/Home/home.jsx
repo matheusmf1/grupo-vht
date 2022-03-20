@@ -1,14 +1,31 @@
-import "./home.css";
+import React, { Component , Fragment } from "react";
 
-import vht1 from '../../assets/images/vht1.png';
 
-export default function Home() {
-  return (
-    <main className="home">
-     
-      <img className="image__container" src={vht1} alt="Logo VHT"/>
-      <h1 className="image__title">Site em construção</h1>
+import { StartSlider } from "../../component/startSlider/StartSlider";
+import Header from "../../component/header/Header"
 
-    </main>
-  );
+
+class Home extends Component {
+
+  constructor( props ) {
+    super( props );
+  }
+
+  render() {
+
+    return(
+      <Fragment>
+				{/* Start Header Area  */}
+				<Header/>
+				{/* End Header Area  */}
+
+				{/* Start Slider Area   */}
+				<StartSlider/>
+				{/* End Slider Area   */}
+
+      </Fragment>
+    );
+  }
 }
+
+export default Home;
