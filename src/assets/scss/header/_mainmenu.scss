@@ -10,7 +10,8 @@ Mainmenu Area
             @extend %liststyle;
             flex-wrap: wrap;
             > li {
-                margin: 0 15px;
+                // margin: 0 15px;
+                margin: 0px;
                 position: relative;
                 > a {
                     @extend %transition;
@@ -19,7 +20,8 @@ Mainmenu Area
                     // font-size: 16px;
                     font-size: 18px;
                     font-weight: 500;
-                    padding: 20px 0;
+                    // padding: 20px 0;
+                    padding: 15px 20px;
                     display: inline-block;
                 }
                 > ul {
@@ -71,8 +73,10 @@ Mainmenu Area
 
                 &:hover {
                     > a {
-                        // color: $theme-color;
-                        color: #ffe522;
+                        color: $theme-color;
+                        // color: #ffe522;
+                        // background-color: #868e96;
+                        // border-radius: 10px;
                     }
                 }
                 &:first-child{

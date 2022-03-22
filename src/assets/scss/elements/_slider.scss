@@ -3,6 +3,19 @@
 ======================*/
 
 
+.ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+    // opacity: 1 !important;
+    color: white;
+  }
+  
+// .ml2 .letter {
+.title .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
 @media #{$sm-layout} {
     .bg_image--31 {
         background-position: 67% center !important;
@@ -46,21 +59,25 @@ Slider Default Style
         h1 {
             &.title {
                 color: #{$text-white};
-                font-size: 125px;
-                font-weight: 900;
+                // font-size: 125px;
+                font-size: 70px;
                 text-transform: uppercase;
                 font-family: 'Montserrat', sans-serif;
-                font-weight: 900;
-                line-height: 130px;
+                // font-weight: 900;
+                font-weight: 700;
+                // line-height: 130px;
                 @media #{$laptop-device} {
-                    font-size: 100px;
+                    // font-size: 100px;
+                    font-size: 70px;
                     line-height: 112px;
                 }
                 @media #{$lg-layout} {
-                    font-size: 90px;
+                    // font-size: 90px;
+                    font-size: 70px;
                     line-height: 103px;
                 }
                 @media #{$md-layout} {
+                    // font-size: 70px;
                     font-size: 70px;
                     line-height: 82px;
                     margin-bottom: 0;
@@ -78,29 +95,30 @@ Slider Default Style
             }
         }
     }
-    &.slide-style-1 {
-        .inner {
-            padding-top: 100px;
-            @media #{$sm-layout} {
-                padding-top: 70px;
-            }
-            @media #{$large-mobile} {
-                padding-top: 30px;
-            }
-            @media #{$md-layout} {
-                padding-top: 50px;
-            }
-            h1 {
-                &.title {
-                    @media #{$md-layout} {
-                        font-size: 70px;
-                        line-height: 82px;
-                        margin-bottom: 26px;
-                    }
-                }
-            }
-        }
-    }
+
+    // &.slide-style-1 {
+    //     .inner {
+    //         padding-top: 100px;
+    //         @media #{$sm-layout} {
+    //             padding-top: 70px;
+    //         }
+    //         @media #{$large-mobile} {
+    //             padding-top: 30px;
+    //         }
+    //         @media #{$md-layout} {
+    //             padding-top: 50px;
+    //         }
+    //         h1 {
+    //             &.title {
+    //                 @media #{$md-layout} {
+    //                     font-size: 70px;
+    //                     line-height: 82px;
+    //                     margin-bottom: 26px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     &.slide-style-2 {
         padding-top: 230px;
@@ -189,11 +207,13 @@ Slider Default Style
             h1 {
                 &.title {                    
                     // color: #{$title-white};
-                    font-size: 100px;
+                    // font-size: 100px;
+                    font-size: 70px;
                     font-weight: 900;
                     
                     @media #{$lg-layout} {
-                        font-size: 72px;
+                        // font-size: 72px;
+                        font-size: 70px;
                     }
 
                     @media #{$md-layout} {
@@ -273,53 +293,53 @@ Slider Default Style
         }
     }
 
-    &.slider-style-3 {
-        .inner {
-            > span {
-                color: #1f1f25;
-                font-size: 15px;
-                text-transform: uppercase;
-                letter-spacing: 4px;
-                display: block;
-                margin-bottom: 20px;
-                @media #{$sm-layout} {
-                    font-size: 13px;
-                    margin-bottom: 10px;
-                }
-            }
-            h1 {
-                &.title {
-                    color: #1f1f25;
-                    font-size: 75px;
-                    font-weight: 900;
-                    font-family: 'Montserrat', sans-serif;
-                    line-height: 90px;
-                    text-transform: inherit;
-                    width: 70%;
+    // &.slider-style-3 {
+    //     .inner {
+    //         > span {
+    //             color: #1f1f25;
+    //             font-size: 15px;
+    //             text-transform: uppercase;
+    //             letter-spacing: 4px;
+    //             display: block;
+    //             margin-bottom: 20px;
+    //             @media #{$sm-layout} {
+    //                 font-size: 13px;
+    //                 margin-bottom: 10px;
+    //             }
+    //         }
+    //         h1 {
+    //             &.title {
+    //                 color: #1f1f25;
+    //                 font-size: 75px;
+    //                 font-weight: 900;
+    //                 font-family: 'Montserrat', sans-serif;
+    //                 line-height: 90px;
+    //                 text-transform: inherit;
+    //                 width: 70%;
 
-                    @media #{$lg-layout} {
-                        font-size: 70px;
-                    }
+    //                 @media #{$lg-layout} {
+    //                     font-size: 70px;
+    //                 }
 
-                    @media #{$md-layout} {
-                        font-size: 60px;
-                        line-height: 77px;
-                        width: 85%;
-                    }
+    //                 @media #{$md-layout} {
+    //                     font-size: 60px;
+    //                     line-height: 77px;
+    //                     width: 85%;
+    //                 }
 
-                    @media #{$sm-layout} {
-                        font-size: 42px;
-                        line-height: 57px;
-                        width: 100%;
-                    }
+    //                 @media #{$sm-layout} {
+    //                     font-size: 42px;
+    //                     line-height: 57px;
+    //                     width: 100%;
+    //                 }
 
-                    span{
-                        color: $theme-color;
-                    }
-                }
-            }
-        }
-    }
+    //                 span{
+    //                     color: $theme-color;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
 .slider-wrapper {
     &.color-white{
