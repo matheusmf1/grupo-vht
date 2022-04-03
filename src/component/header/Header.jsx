@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Scrollspy from 'react-scrollspy';
 import { FiChevronUp , FiX , FiMenu } from "react-icons/fi";
 
@@ -11,6 +11,30 @@ const Header = () => {
 	const closeMenuTrigger = () => {
 		document.querySelector('.header-wrapper').classList.remove('menu-open')
 	}
+
+	useEffect( () => {
+		
+		window.addEventListener('scroll', function() {
+			let value = window.scrollY;
+			if (value > 50) {
+				document.querySelector('.header--fixed').classList.add('sticky')
+			}
+			else {
+				document.querySelector('.header--fixed').classList.remove('sticky')
+			}
+		});
+	
+		let elements = document.querySelectorAll('.has-droupdown > a');
+		for( var i in elements ) {
+			if(elements.hasOwnProperty(i)) {
+				elements[i].onclick = function() {
+					this.parentElement.querySelector('.submenu').classList.toggle("active");
+					this.classList.toggle("open");
+				}
+			}
+		}
+
+	},[] );
 
 
 	return(

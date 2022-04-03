@@ -1,28 +1,27 @@
 import React, { Component , Fragment } from "react";
-
-
 import { StartSlider } from "../../component/startSlider/StartSlider";
-import Header from "../../component/header/Header"
+import ServiceList from "../../component/services/ServiceList";
+import Header from "../../component/header/Header";
+import Service from "../../component/services/Service";
 
 
 class Home extends Component {
-
-  constructor( props ) {
+	
+	constructor( props ) {
     super( props );
   }
 
   render() {
-
-    return(
+		
+		return(
       <Fragment>
-				{/* Start Header Area  */}
+
 				<Header/>
-				{/* End Header Area  */}
 
-				{/* Start Slider Area   */}
 				<StartSlider/>
-				{/* End Slider Area   */}
 
+				<Service/>
+				
       </Fragment>
     );
   }
