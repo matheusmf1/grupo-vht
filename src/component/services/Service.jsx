@@ -10,7 +10,7 @@ export default function Service() {
               <div className="col-lg-12">
                   <div className="section-title text-center service-style--3 mb--30">
                       <h2 className="title">Nossos Serviços</h2>
-                      <p>Somos umas empresa que ofere serviços diferenciados aos nossos clientes. Com excelência em qualidade, atendimento e praticidade.</p>
+                      <p>Oferecemos aos nossos Clientes e Parceiros soluções diferenciadas, com excelência em qualidade, atendimento e praticidade.</p>
                   </div>
               </div>
           </div>

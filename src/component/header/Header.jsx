@@ -55,8 +55,8 @@ const Header = () => {
 											<Scrollspy className="mainmenu" items={['home','service','getstart','about','team','testimonial','portfolio']} currentClassName="is-current" offset={-200}>
 													<li><a href="#home">Inicio</a></li>
 													<li><a href="#service">Serviços</a></li>
-													<li><a href="#about">Sobre</a></li>
-													<li><a href="#contact">Contato</a></li>
+													<li><a href="#sobre">Sobre</a></li>
+													<li><a href="#contato">Contato</a></li>
 											</Scrollspy>
 									</nav>
 								 

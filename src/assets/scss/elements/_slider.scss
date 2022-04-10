@@ -181,7 +181,7 @@ Slider Default Style
             position: relative;
             z-index: 2;
             @media #{$sm-layout} {
-                padding-top: 0;
+                // padding-top: 0;
                 text-align: center !important;
             }
             &.text-right {

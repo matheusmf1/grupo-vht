@@ -1,46 +1,57 @@
 import React ,{ Component }from "react";
-import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+import { FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
 import { MdOutlineEngineering } from "react-icons/md";
 import { AiOutlineSecurityScan } from "react-icons/ai";
 import { BiBookReader } from "react-icons/bi";
+import { FaLaptopHouse } from "react-icons/fa";
+import { GiSecurityGate } from "react-icons/gi";
+import { BiRecycle } from "react-icons/bi";
+import { BsRecycle } from "react-icons/bs";
+import { FaHandsHelping } from "react-icons/fa";
+import { MdOutlineHandyman } from "react-icons/md";
+
 
 
 const serviceListName = [
     { 
         icon: <AiOutlineSecurityScan/>,
-        link: "/seguranca",
-        title: 'Segurança',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        // icon: <GiSecurityGate/>,
+        link: "/seguranca-eletronica",
+        title: 'Segurança Eletrônica',
+        description: "Portaria Remota, Monitoramento, Alarmes, Sistemas e Equipamentos"
     },
     {
-        icon: <MdOutlineEngineering />,
+        // icon: <MdOutlineEngineering />,
+        icon: <MdOutlineHandyman />,
         link: "/engenharia",
         title: 'Engenharia',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        description: "Projeto Estrutural, Arquitetônico, Gerenciamento e Execução de obras"
     },
     {
-        icon: <FiLayers />,
+        icon: <FaLaptopHouse />,
         link: "/automacao",
         title: 'Automação',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        description: "Soluções Técnologicas, Residenciais, Comerciais e Industriais"
     },
     {
-        icon: <FiUsers />,
+        // icon: <FiUsers />,
+        icon: <FaHandsHelping />,
         link: "/governo",
         title: 'Governos',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        description: "Licitações e Compras Emergenciais para Órgãos Públicos"
     },
     { 
-        icon: <FiMonitor />,
+        icon: <BiRecycle />,
+        // icon: <BsRecycle />,
         link: "/facilities",
         title: 'Facilities',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        description: "Recepção, Controle de Acesso, Limpeza, Zeladoria, Manutenção e afins"
     },
     {
         icon: <BiBookReader />,
         link: "/cursos",
         title: 'Cursos',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        description: "Capacitação Profissional, Treinamentos, Especializações e Normas Regulamentadoras"
     }
 ]
 

@@ -7,7 +7,6 @@ export const StartSlider = () => {
         textPosition: 'text-center',
         category: '',
         title: 'VHT Serviços e Sistemas',
-        // description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
         buttonText: 'Entre em contato',
         buttonLink: '/'
     }
@@ -15,16 +14,12 @@ export const StartSlider = () => {
 
   useEffect( () => {
 
-    console.log('oooi animacao')
-
-    // var textWrapper = document.querySelector('.ml2');
-    var textWrapper = document.querySelector('.title');
+    let textWrapper = document.querySelector('.title');
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
     window.anime.timeline({loop: false})
     .add(
       {
-        // targets: '.ml2 .letter',
         targets: '.title .letter',
         scale: [4,1],
         opacity: [0,1],
@@ -33,17 +28,7 @@ export const StartSlider = () => {
         duration: 900,
         delay: (el, i) => 100*i
       })
-      // .add(
-      //   {
-      //     targets: '.ml2',
-      //     opacity: [0,1],
-      //     duration: 1000,
-      //     easing: "easeOutExpo",
-      //     // easing: "easeInExpo",
-      //     delay: 1000
-      //   }
-      // );
-
+      
   }, []);
   
   return(
@@ -55,7 +40,7 @@ export const StartSlider = () => {
                   <div className="container">
                       <div className="row">
                           <div className="col-lg-12">
-                              <div className={`inner ${value.textPosition}`}>
+                              <div className={`test inner ${value.textPosition}`}>
                                   {value.category ? <span>{value.category}</span> : ''}
                                   {value.title ? <h1 className="title">{value.title}</h1> : ''}
                                   {/* {value.title ? <h1 className="ml2">{value.title}</h1> : ''} */}

@@ -1,0 +1,9 @@
+.container__contact {
+  margin: 60px 0px;
+}
+
+.container__contact--title {
+  /* width: max-content; */
+  text-transform: uppercase;
+  text-align-last: center;
+}

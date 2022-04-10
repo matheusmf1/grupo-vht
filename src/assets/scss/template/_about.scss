@@ -2,6 +2,17 @@
     About Area 
 ======================*/
 
+
+.container__about {
+    background-color: black;
+}
+
+@media #{$sm-layout} {
+    .description {
+        text-align: start !important;
+    }
+}
+
 .rn-finding-us-area {
     .inner {
         position: relative;
@@ -129,12 +140,16 @@
         h2{
             &.title{
                 margin-bottom: 8px;
+                color: #b8923b;
             }
         }
         p{
             &.description{
-                font-weight: 300;
-                color: #717173;
+                font-weight: 400;
+                // color: #444446;
+                color: white;
+                font-size: 20px;
+                text-align: justify;
                 a{
                     color: rgba(29, 29, 36, 1);
                     &:hover{
