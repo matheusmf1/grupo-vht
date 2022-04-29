@@ -5,11 +5,11 @@ import { FiChevronUp , FiX , FiMenu } from "react-icons/fi";
 const Header = () => {
 
 	const menuTrigger = () => {
-		document.querySelector('.header-wrapper').classList.toggle('menu-open')
+		document.querySelector('.header-wrapper').classList.toggle('menu-open');
 	}
 
 	const closeMenuTrigger = () => {
-		document.querySelector('.header-wrapper').classList.remove('menu-open')
+		document.querySelector('.header-wrapper').classList.remove('menu-open');
 	}
 
 	useEffect( () => {
@@ -44,36 +44,37 @@ const Header = () => {
 							<div className="header-left">
 									<div className="logo">
 											<a href="/">
-													{/* <img className="logo-1" src="/assets/images/logo/logo-light.png" alt="Logo Images"/> */}
-													<img className="logo-1 logo-retangular" src="/assets/images/logo/logo-vht10.png" alt="Logo Images"/>
-													{/* <img className="logo-1 logo-rounded" src="/assets/images/logo/logo-vht-rounded2.png" alt="Logo Images"/> */}
+													<img className="logo-1 logo-retangular" src="/assets/images/logo-vht-horizontal-branco.png" alt="Logo Images"/>
+													<img className="logo-2" src="/assets/images/logo-vht-horizontal-preto.png" alt="Logo Images"/>
 											</a>
 									</div>
 							</div>
+
 							<div className="header-right">
-									<nav className="mainmenunav d-lg-block">
-											<Scrollspy className="mainmenu" items={['home','service','getstart','about','team','testimonial','portfolio']} currentClassName="is-current" offset={-200}>
-													<li><a href="#home">Inicio</a></li>
-													<li><a href="#service">Serviços</a></li>
-													<li><a href="#sobre">Sobre</a></li>
-													<li><a href="#contato">Contato</a></li>
-											</Scrollspy>
-									</nav>
+								<nav className="mainmenunav d-lg-block">
+									<Scrollspy className="mainmenu" items={['inicio','servicos','sobre','contato']} currentClassName="is-current" offset={-200}>
+											<li><a href="#inicio">Inicio</a></li>
+											<li><a href="#servicos">Serviços</a></li>
+											<li><a href="#sobre">Sobre</a></li>
+											<li><a href="#contato">Contato</a></li>
+									</Scrollspy>
+								</nav>
 								 
-									{/* Start Humberger Menu  */}
-									<div className="humberger-menu d-block d-lg-none pl--20">
-											<span onClick={menuTrigger} className="menutrigger text-white"><FiMenu /></span>
-									</div>
-									{/* End Humberger Menu  */}
-									<div className="close-menu d-block d-lg-none">
-											<span onClick={closeMenuTrigger} className="closeTrigger"><FiX /></span>
-									</div>
+								{/* Start Humberger Menu  */}
+								<div className="humberger-menu d-block d-lg-none pl--20">
+									<span onClick={menuTrigger} className="menutrigger text-white"><FiMenu/></span>
+								</div>
+
+								{/* End Humberger Menu  */}
+								<div className="close-menu d-block d-lg-none">
+									<span onClick={closeMenuTrigger} className="closeTrigger"><FiX/></span>
+								</div>
 							</div>
+
 					</div>
 			</header>
 		</>
 	);
-
 }
 
 export default Header;
