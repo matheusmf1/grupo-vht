@@ -4,7 +4,7 @@ import ServiceList from './ServiceList';
 export default function Service() {
 
   return (
-    <div className="service-area pt--120 pb--50 bg_color--1" id="service">
+    <div className="service-area pt--120 pb--50 bg_color--1" id="servicos">
       <div className="container">
           <div className="row">
               <div className="col-lg-12">

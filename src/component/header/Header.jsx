@@ -40,38 +40,37 @@ const Header = () => {
 	return(
 		<>
 			<header className="header-area formobile-menu header--fixed default-color">
-					<div className="header-wrapper" id="header-wrapper">
-							<div className="header-left">
-									<div className="logo">
-											<a href="/">
-													<img className="logo-1 logo-retangular" src="/assets/images/logo-vht-horizontal-branco.png" alt="Logo Images"/>
-													<img className="logo-2" src="/assets/images/logo-vht-horizontal-preto.png" alt="Logo Images"/>
-											</a>
-									</div>
-							</div>
-
-							<div className="header-right">
-								<nav className="mainmenunav d-lg-block">
-									<Scrollspy className="mainmenu" items={['inicio','servicos','sobre','contato']} currentClassName="is-current" offset={-200}>
-											<li><a href="#inicio">Inicio</a></li>
-											<li><a href="#servicos">Serviços</a></li>
-											<li><a href="#sobre">Sobre</a></li>
-											<li><a href="#contato">Contato</a></li>
-									</Scrollspy>
-								</nav>
-								 
-								{/* Start Humberger Menu  */}
-								<div className="humberger-menu d-block d-lg-none pl--20">
-									<span onClick={menuTrigger} className="menutrigger text-white"><FiMenu/></span>
-								</div>
-
-								{/* End Humberger Menu  */}
-								<div className="close-menu d-block d-lg-none">
-									<span onClick={closeMenuTrigger} className="closeTrigger"><FiX/></span>
-								</div>
-							</div>
-
+				<div className="header-wrapper" id="header-wrapper">
+					<div className="header-left">
+						<div className="logo">
+							<a href="/">
+								<img className="logo-1 logo-retangular" src="/assets/images/logo-vht-horizontal-branco.png" alt="Logo Images"/>
+								<img className="logo-2" src="/assets/images/logo-vht-horizontal-preto.png" alt="Logo Images"/>
+							</a>
+						</div>
 					</div>
+
+					<div className="header-right">
+						<nav className="mainmenunav d-lg-block">
+							<Scrollspy className="mainmenu" items={['inicio','servicos','sobre','contato']} currentClassName="is-current" offset={-200}>
+								<li><a href="#inicio">Inicio</a></li>
+								<li><a href="#servicos">Serviços</a></li>
+								<li><a href="#sobre">Sobre</a></li>
+								<li><a href="#contato">Contato</a></li>
+							</Scrollspy>
+						</nav>
+							
+						{/* Start Humberger Menu  */}
+						<div className="humberger-menu d-block d-lg-none pl--20">
+							<span onClick={menuTrigger} className="menutrigger text-white"><FiMenu/></span>
+						</div>
+
+						{/* End Humberger Menu  */}
+						<div className="close-menu d-block d-lg-none">
+							<span onClick={closeMenuTrigger} className="closeTrigger"><FiX/></span>
+						</div>
+					</div>
+				</div>
 			</header>
 		</>
 	);

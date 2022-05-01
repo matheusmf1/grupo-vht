@@ -33,7 +33,7 @@ export const StartSlider = () => {
   
   return(
     <>
-      <div className="slider-activation slider-creative-agency" id="home">
+      <div className="slider-activation slider-creative-agency" id="inicio">
         <div className="bg_image" data-black-overlay="2" style={ {"backgroundImage": `url( '/assets/images/leao-juda.jpg' )` } }>
           { SlideList.map((value , index) => (
               <div className="slide slide-style-2 slider-paralax d-flex align-items-center justify-content-center" key={index}>

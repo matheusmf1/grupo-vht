@@ -160,7 +160,8 @@
         z-index: 999;
         padding: 5px 15px;
         width: 100%;
-        background: transparent;
+        // background: transparent;
+        background: linear-gradient(240deg, rgb(0 0 0 / 80%), transparent);
         transition: 0.3s;
         
         // @media #{$lg-layout} {
@@ -207,14 +208,16 @@
                                     left: 0;
                                     width: 0;
                                     height: 3px;
-                                    background: $theme-color;
+                                    // background: $theme-color;
+                                    background: $theme-color-2;
                                     transition: 0.3s;
                                     bottom: 0;
                                 }
                             }
                             &.is-current {
                                 a{
-                                    color: $theme-color;
+                                    color: $theme-color-2;
+                                    // color: $theme-color;
                                     &::after {
                                         width: 100%;
                                     }
