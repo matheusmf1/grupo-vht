@@ -208,8 +208,8 @@
                                     left: 0;
                                     width: 0;
                                     height: 3px;
-                                    // background: $theme-color;
-                                    background: $theme-color-2;
+                                    // background: $theme-color-2;
+                                    background: $theme-color-4;
                                     transition: 0.3s;
                                     bottom: 0;
                                 }
@@ -217,7 +217,6 @@
                             &.is-current {
                                 a{
                                     color: $theme-color-2;
-                                    // color: $theme-color;
                                     &::after {
                                         width: 100%;
                                     }
@@ -240,7 +239,9 @@
                                 }
                                 &.is-current {
                                     a{
-                                        color: $theme-color;
+                                        // color: $theme-color-2;
+                                        // color: $theme-color;
+                                        color: $theme-color-4;
                                         &::after {
                                             width: 100%;
                                         }

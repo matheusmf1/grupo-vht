@@ -78,7 +78,8 @@
             content: "";
             left: 0;
             top: 0;
-            // background-image: linear-gradient( to right, $theme-color , $theme-color-2);
+            // background-image: linear-gradient( to bottom, $theme-color , $theme-color-2);
+            // background-image: linear-gradient(to bottom, #c09a44, #b58201);
             background-color: $theme-color;
             width: 100%;
             height: 100%;
