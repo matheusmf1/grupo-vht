@@ -3,15 +3,12 @@ Button Area
 ====================*/
 
 .container__contact--sendBtn {
-    border: 2px solid #b8923b;
-    // background: #b8923b;
+    border: none !important;
     background: #013e6f;
     color: #ffffff !important;
 }
 
 .container__contact--sendBtn:hover {
-    // background: #000000 !important;
-    // background: #e29d00 !important;
     background: #012949 !important;
 }
 
