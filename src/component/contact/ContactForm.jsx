@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-import emailjs from '@emailjs/browser';
-import mail from '@sendgrid/mail';
 
 const Result = () => {
 	return (
@@ -8,32 +6,18 @@ const Result = () => {
 	);
 }
 
+const Error = () => {
+	return (
+		<p className="error-message">Houve um erro, por favor tente novamente.</p>
+	);
+}
+
 function ContactForm({props}) {
 	
-	const [ result,showresult ] = useState(false);
+	const [ result, showresult ] = useState(false);
+	const [ error, showerror ] = useState(false);
 
-	const sendEmail = (e) => {
-		e.preventDefault();
-			
-		emailjs.sendForm(
-			process.env.REACT_APP_EMAILJS_SERVICE_ID,
-			'template_test',
-			e.target,
-			process.env.REACT_APP_EMAILJS_API_KEY,
-		)
-		.then( (result) => {
-			console.log(result.text)
-		},
-			(error) => {
-				console.error(error.text);
-			}
-		);
-
-		e.target.reset();
-		showresult(true);
-	};
-
-	const sendEmailGrid = ( e ) => {
+	const sendEmailGrid = async ( e ) => {
 
 		e.preventDefault();
 
@@ -44,52 +28,32 @@ function ContactForm({props}) {
 			if ( !field.name ) return;
 			formData[ field.name ] = field.value;
 		});
+		
+		await fetch( 'https://4fz0iyonpe.execute-api.us-east-1.amazonaws.com/dev/email', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify( formData )
+		})
+		.then( res => res.json() )
+		.then( data => {
 
-		mail.setApiKey( process.env.REACT_APP_SENDGRID_KEY );
-
-		const emailMsg = `
-			Olá VHT,
-			
-			Você possui uma solicitação de contato vinda do site.
-
-			Segue a mensagem:
-
-			Nome: ${formData.name}
-
-			Email: ${formData.email}
-
-			Telefone: ${formData.phone}
-
-			${formData.message}
-		`;
-
-		const emailData = {
-			to: formData.email,
-			from: 'contato@grupovht.com', // Use the email address or domain you verified above
-			subject: `[Contato - Site] - ${formData.subject}`,
-			// text: emailMsg,
-			html: emailMsg,
-		};
-
-
-		mail
-		.send( emailData )
-		.then( () => {}, error => {
-			console.error(error);
-
-			if (error.response) {
-				console.error(error.response.body)
-			}
-  	});
+			e.target.reset();
+			showresult(true);
+			showerror(false);
+		})
+		.catch( error => {
+			console.error( error );
+			showerror(true);
+		} );
 
 	}
 
-	setTimeout(() => {
+		setTimeout(() => {
 			showresult(false);
-	}, 5000);
+			// showerror(false);
+		}, 5000);
 
   return (
-		// <form onSubmit={sendEmail}>
 		<form onSubmit={sendEmailGrid}>
 			<div className="rn-form-group">
 				<input
@@ -143,6 +107,7 @@ function ContactForm({props}) {
 
 			<div className="rn-form-group">
 				{result ? <Result /> : null}
+				{error ? <Error /> : null}
 			</div>
     </form>
   )
