@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emailjs/browser": "^3.6.2",
-    "@sendgrid/mail": "^7.7.0",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -45,7 +43,6 @@
       "last 1 safari version"
     ]
   },
-
   "devDependencies": {
     "@putout/plugin-webpack": "^1.4.0"
   }

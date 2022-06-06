@@ -8,7 +8,7 @@ export const StartSlider = () => {
         category: '',
         title: 'VHT Serviços e Sistemas',
         buttonText: 'Entre em contato',
-        buttonLink: '/'
+        buttonLink: '#contato'
     }
   ]
 

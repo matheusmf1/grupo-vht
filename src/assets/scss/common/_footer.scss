@@ -6,6 +6,10 @@ Footer Styles
     position: relative;
 }
 
+.footer_image {
+    max-width: 250px;
+}
+
 .footer-left {
     background: linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
     padding: 120px 120px;
@@ -169,10 +173,11 @@ Footer Styles
 
 /* Footer Style Two  */
 .footer-style-2 {
+    background-color: black;
     p {
         color: #c6c9d8;
         font-size: 14px;
-        opacity: 0.75;
+        // opacity: 0.75;
     }
 }
 

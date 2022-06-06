@@ -4,6 +4,7 @@ import Header from "../../component/header/Header";
 import Service from "../../component/services/Service";
 import Contact from "../../component/contact/Contact";
 import About from "../../component/about/About";
+import Footer from "../../component/footer/Footer";
 
 class Home extends Component {
 	
@@ -26,6 +27,8 @@ class Home extends Component {
         <About/>
 
         <Contact/>
+
+        <Footer/>
 				
       </Fragment>
     );
