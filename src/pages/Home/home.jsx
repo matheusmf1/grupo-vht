@@ -5,6 +5,7 @@ import Service from "../../component/services/Service";
 import Contact from "../../component/contact/Contact";
 import About from "../../component/about/About";
 import Footer from "../../component/footer/Footer";
+import SEO from "../../component/seo/SEO";
 
 class Home extends Component {
 	
@@ -17,6 +18,8 @@ class Home extends Component {
 		
 		return(
       <Fragment>
+
+        <SEO/>
 
 				<Header/>
 
