@@ -771,7 +771,7 @@ Slider Default Button And Dot STyle
                 }
 
                 &::before{
-                    content: url(/assets/images/icons/slick-arrow-left-small.png);
+                    // content: url(/assets/images/icons/slick-arrow-left-small.png);
                 }
                 &:hover{
                     left: 30px;
@@ -790,7 +790,7 @@ Slider Default Button And Dot STyle
                     right: 10px;
                 }
                 &::before{
-                    content: url(/assets/images/icons/slick-arrow-right-small.png);
+                    // content: url(/assets/images/icons/slick-arrow-right-small.png);
                 }
                 &:hover {
                     right: 30px;
@@ -860,7 +860,7 @@ Custom Animation
 ----------------------*/
 
 .box-model .service-wrapper {
-    background-image: url(/assets/images/bg/bg-image-1.jpg);
+    // background-image: url(/assets/images/bg/bg-image-1.jpg);
     padding: 10px 50px;
     border-radius: 6px;
     position: relative;

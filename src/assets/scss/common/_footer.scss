@@ -36,7 +36,7 @@ Footer Styles
         height: 100%;
         left: 0;
         top: 0;
-        background-image: url("/assets/images/pattern-1.png");
+        // background-image: url("/assets/images/pattern-1.png");
         content: "";
         z-index: 1;
         opacity: 0.5;
@@ -47,7 +47,7 @@ Footer Styles
         position: relative;
         &::after{
             //content: "tryDO";
-            content: url(/assets/images/logo/big-logo.png);
+            // content: url(/assets/images/logo/big-logo.png);
             position: absolute;
             right: 0;
             top: 50%;
@@ -112,7 +112,7 @@ Footer Styles
 }
 
 .footer-right {
-    background-image: url(/assets/images/bg/bg-image-8.jpg);
+    // background-image: url(/assets/images/bg/bg-image-8.jpg);
     padding: 150px 70px;
     width: 100%;
     background-repeat: no-repeat;
