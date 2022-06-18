@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
 
 export default function SEO() {
 
@@ -26,20 +27,14 @@ export default function SEO() {
 	}
 
 	return (
-		<head>
+		// <head>
+		<Helmet>
 			<title>{data.title}</title>
 			<meta name="title" content={data.title} />
 			<meta name="description" content={data.description} />
 			<meta name="keywords" content={data.keywords.join(", ")} />
-			{/* Favicon */}
-			{/* <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon.png" /> */}
-			{/* <link
-				rel="icon"
-				type="image/png"
-				sizes="16x16"
-				href="./favicon.ico"
-			/> */}
-		</head>
+		</Helmet>
+		// </head>
 	);
 }
 
